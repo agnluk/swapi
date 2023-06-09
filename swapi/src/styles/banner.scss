@@ -1,0 +1,33 @@
+.banner {
+  position: relative;
+  background-color: black;
+  background-image: linear-gradient(to right, rgb(54, 54, 54), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Adjust the width as needed */
+  height: 4px; /* Adjust the height as needed */
+  background-color: transparent;
+  border-radius: 2px; /* Adjust the border radius as needed */
+  mix-blend-mode: screen;
+  animation: glowingLine 1.5s ease-in-out infinite; /* Add animation for the glowing effect */
+  bottom: 0; /* Position the underline at the bottom */
+}
+
+@keyframes glowingLine {
+  0% {
+    box-shadow: 0 0 5px 2px blue; /* Initial shadow color */
+  }
+  50% {
+    box-shadow: 0 0 20px 8px blue; /* Intermediate shadow color */
+  }
+  100% {
+    box-shadow: 0 0 5px 2px blue; /* Final shadow color */
+  }
+}

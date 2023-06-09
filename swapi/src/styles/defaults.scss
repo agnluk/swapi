@@ -1,0 +1,15 @@
+$color-primary : #ED9300;
+$color-secondary : rgb(20, 20, 34);
+
+$color-white : white;
+$color-grey : grey;
+$color-black : black;
+
+$width: (
+  max-width: 800px,
+  min-width: 300px
+);
+
+@function steps($number){
+  @return $number * 4px;
+}

@@ -1,0 +1,13 @@
+@import "./defaults.scss";
+
+.img {
+    border: 1px solid $color-grey;
+    border-radius: steps(1);
+    padding: steps(1);
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+.img:hover {
+    box-shadow: 0 0 2px 1px $color-primary;
+  }
